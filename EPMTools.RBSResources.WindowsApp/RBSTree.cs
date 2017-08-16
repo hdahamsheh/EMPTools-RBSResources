@@ -16,6 +16,7 @@ namespace EPMTools.RBSResources.WindowsApp
     {
         public static List<User> Users = new List<User>();
         public static List<Node> nodes = new List<Node>();
+        public Utilities pwaUtilities = null;
 
         public RBSTree()
         {
@@ -49,6 +50,7 @@ namespace EPMTools.RBSResources.WindowsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            pwaUtilities = new Utilities(txtPwaUrl.Text.Trim(), txtUsername.Text.Trim(), txtPassword.Text.Trim(), txtDomain.Text.Trim());
             treeView1.Nodes.Clear();
             Loading loadingWindow = new Loading();
             loadingWindow.Show(this);
@@ -59,8 +61,6 @@ namespace EPMTools.RBSResources.WindowsApp
                 this.Invoke(new MethodInvoker(() => this.Enabled = false));
                 try
                 {
-                    Utilities pwaUtilities = new Utilities(txtPwaUrl.Text.Trim(), txtUsername.Text.Trim(), txtPassword.Text.Trim(), txtDomain.Text.Trim());
-
                     RBSTree.Users = pwaUtilities.GetResources();
                     RBSTree.nodes = pwaUtilities.GetNodes();
 
