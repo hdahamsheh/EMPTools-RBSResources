@@ -1,0 +1,8 @@
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\obj\Debug\EPMTools.RBSResources.EPMRepository.csprojResolveAssemblyReference.cache
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\bin\Debug\EPMTools.RBSResources.EPMRepository.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\bin\Debug\EPMTools.RBSResources.EPMRepository.pdb
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\bin\Debug\Microsoft.ProjectServer.Client.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\bin\Debug\Microsoft.SharePoint.Client.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\obj\Debug\EPMTools.RBSResources.EPMRepository.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.EPMRepository\obj\Debug\EPMTools.RBSResources.EPMRepository.pdb

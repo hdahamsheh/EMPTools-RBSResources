@@ -1,0 +1,16 @@
+C:\H\Dev\DohmoshGit\EPMTools.RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\EPMTools.RBSResources.WindowsApp.exe.config
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\EPMTools.RBSResources.WindowsApp.exe.config
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\EPMTools.RBSResources.WindowsApp.exe
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\EPMTools.RBSResources.WindowsApp.pdb
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\EPMTools.RBSResources.EPMRepository.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\Microsoft.ProjectServer.Client.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\Microsoft.SharePoint.Client.dll
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\bin\Debug\EPMTools.RBSResources.EPMRepository.pdb
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.csprojResolveAssemblyReference.cache
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.Loading.resources
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.RBSTree.resources
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.Properties.Resources.resources
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.csproj.GenerateResource.Cache
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.exe
+C:\H\Dev\DohmoshGit02\EMPTools-RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.pdb
