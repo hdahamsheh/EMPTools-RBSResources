@@ -29,3 +29,4 @@ D:\Development\Git\EPM.RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\E
 D:\Development\Git\EPM.RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.RBSTree.resources
 D:\Development\Git\EPM.RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.Properties.Resources.resources
 D:\Development\Git\EPM.RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.csproj.GenerateResource.Cache
+D:\Development\Git\EPM.RBSResources\EPMTools.RBSResources.WindowsApp\obj\Debug\EPMTools.RBSResources.WindowsApp.UserMembership.resources

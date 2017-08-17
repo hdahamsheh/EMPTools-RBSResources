@@ -42,6 +42,7 @@ namespace EPMTools.RBSResources.EPMRepository
 
                         user.IsActive = item.IsActive;
                         user.Name = item.Name != null ? item.Name : "";
+                        user.ID = item.Id;
 
                         var cf = item.CustomFields.Where(c => c.Name.ToLower() == "rbs").SingleOrDefault();
                         if (cf != null)
@@ -103,6 +104,29 @@ namespace EPMTools.RBSResources.EPMRepository
             }            
 
             return nodes;
+        }
+
+        public List<Entities.Group> GetUserSharepointGroupGroups(Guid userID)
+        {
+            List<Entities.Group> groups = new List<Entities.Group>();
+            EnterpriseResource resource = context.EnterpriseResources.GetByGuid(userID);
+            context.Load(resource, r=>r.User, r => r.User.Groups, r => r.User.Groups.IncludeWithDefaultProperties(g=>g.LoginName));
+            context.ExecuteQuery();
+
+            if(!resource.ServerObjectIsNull.Value)
+            {
+                foreach(var item in resource.User.Groups)
+                {
+                    Entities.Group group = new Entities.Group();
+                    group.ID = item.Id;
+                    group.Name = item.Title;
+                    group.Description = item.Description;
+
+                    groups.Add(group);
+                }
+            }
+
+            return groups;
         }
     }
 }

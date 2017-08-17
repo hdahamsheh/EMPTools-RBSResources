@@ -14,5 +14,6 @@ namespace EPMTools.RBSResources.EPMRepository.Entities
         public bool IsActive { get; set; }
         public string RBS { get; set; }
         public string RBSInternalName { get; set; }
+        public Guid ID { get; internal set; }
     }
 }

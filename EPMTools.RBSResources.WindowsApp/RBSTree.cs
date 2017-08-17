@@ -80,7 +80,7 @@ namespace EPMTools.RBSResources.WindowsApp
             {
                 loadingWindow.Close();
                 AddNodes(nodes.Where(n => n.ParentID == Guid.Empty).ToList(), treeView1.Nodes);
-                this.Invoke(new MethodInvoker(() => { this.Enabled = true; this.TopMost = true; }));
+                this.Invoke(new MethodInvoker(() => { this.Enabled = true; }));
 
             };
             bw.Disposed += (s, args) =>
@@ -90,6 +90,20 @@ namespace EPMTools.RBSResources.WindowsApp
             };
 
             bw.RunWorkerAsync();
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var user = ((sender as DataGridView).DataSource as List<EPMTools.RBSResources.EPMRepository.Entities.User>).ElementAtOrDefault(e.RowIndex);
+            if (user != null)
+            {
+                UserMembership userMembershipWindow = new UserMembership();
+                
+                var groups = pwaUtilities.GetUserSharepointGroupGroups(user.ID);
+                userMembershipWindow.dgvUserGroups.DataSource = groups;
+
+                userMembershipWindow.ShowDialog();
+            }
         }
     }
 }
