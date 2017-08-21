@@ -12,13 +12,19 @@ namespace EPMTools.RBSResources.EPMRepository
 {
     public class Utilities
     {
+        private ProjectContext context = null;
+        private PSI.Services.SecurityService secService = null;
+        private PSI.Services.ResourceService resService = null;
+
         public Utilities(string pwaUrl, string username, string password, string domain)
         {
             context = new ProjectContext(pwaUrl);
             context.Credentials = new NetworkCredential(username, password, domain);
+
+            secService = new PSI.Services.SecurityService(pwaUrl, username, password, domain);
+            resService = new PSI.Services.ResourceService(pwaUrl, username, password, domain);
         }
 
-        private ProjectContext context = null;
 
         public List<Entities.User> GetResources()
         {
@@ -110,23 +116,34 @@ namespace EPMTools.RBSResources.EPMRepository
         {
             List<Entities.Group> groups = new List<Entities.Group>();
             EnterpriseResource resource = context.EnterpriseResources.GetByGuid(userID);
-            context.Load(resource, r=>r.User, r => r.User.Groups, r => r.User.Groups.IncludeWithDefaultProperties(g=>g.LoginName));
+            context.Load(resource, r => r.User, r => r.User.Groups, r => r.User.Groups.IncludeWithDefaultProperties(g => g.LoginName), r => r.Group, r => r.Id);
             context.ExecuteQuery();
-
+            
             if(!resource.ServerObjectIsNull.Value)
             {
-                foreach(var item in resource.User.Groups)
+                foreach (var item in resource.User.Groups)
                 {
                     Entities.Group group = new Entities.Group();
                     group.ID = item.Id;
                     group.Name = item.Title;
-                    group.Description = item.Description;
 
                     groups.Add(group);
                 }
             }
 
             return groups;
+        }
+
+        public List<Entities.Group> GetProjectServerGroups(Guid UserID)
+        {
+            var resAuth = resService.GetResource(UserID);
+            List<Guid> groupsIDs = resAuth.GroupMemberships.Select(g => g.WSEC_GRP_UID).ToList();
+            return secService.GetGroups(groupsIDs);
+        }
+
+        public void Connect()
+        {
+            EnterpriseResource res = EnterpriseResource.GetSelf(context);
         }
     }
 }

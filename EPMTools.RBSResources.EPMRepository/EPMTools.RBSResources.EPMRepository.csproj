@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Project.Server.Library">
+      <HintPath>..\DLLs\Microsoft.Office.Project.Server.Library.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ProjectServer.Client">
       <HintPath>..\DLLs\Microsoft.ProjectServer.Client.dll</HintPath>
     </Reference>
@@ -43,6 +46,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +60,12 @@
     <Compile Include="Entities\Group.cs" />
     <Compile Include="Entities\Node.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="PSI\Proxies\wcf.Admin.cs" />
+    <Compile Include="PSI\Proxies\wcf.Resource.cs" />
+    <Compile Include="PSI\Proxies\wcf.Security.cs" />
+    <Compile Include="PSI\Services\ResourceService.cs" />
+    <Compile Include="PSI\Services\SecurityService.cs" />
+    <Compile Include="PSI\Services\ServiceBase.cs" />
     <Compile Include="Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
