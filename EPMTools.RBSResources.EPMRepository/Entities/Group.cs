@@ -8,8 +8,8 @@ namespace EPMTools.RBSResources.EPMRepository.Entities
 {
     public class Group
     {
+        public string Description { get; internal set; }
         public int ID { get; internal set; }
         public string Name { get; internal set; }
-        public Guid UniqueID { get; internal set; }
     }
 }
